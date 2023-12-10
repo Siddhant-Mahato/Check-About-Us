@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.star{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(223, 216, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.star1{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.star1 h1{
+    position: absolute  ;
+    top: 50px;
+    height: 100px;
+}
+
+.star1 p{
+    position: relative;
+    width: 80%;
+    top: -50px;
+}
+
+.star2{
+    display: flex;
+    gap: 50px;
+}
+
+.card-body .stat{
+    position: relative;
+    height: 50px;
+    width: 40px;
+    left: 40%;   
+}
+
+.stat1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 18rem; 
+    height: 18rem;
+}
+
+@media (max-width:1000px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .star1 h1{
+        position: absolute  ;
+        top: 30px;
+        height: 100px;
+    }
+    .star1{
+        height: 600px;
+    }
+    
+    .star1 p{
+        position: relative;
+        width: 80%;
+        top: 35px;
+    }
+
+    .star2 {
+        display: flex;
+        flex-direction: column;
+        gap: 60px; /* Adjust the gap between cards if needed */
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .cord{
+        width: 18rem;
+        height: auto; /* Set height to auto for variable height based on content */
+        overflow-y: hidden;
+    }
+}
