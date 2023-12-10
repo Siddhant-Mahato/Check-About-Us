@@ -46,6 +46,93 @@
 }
 
 .star2{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.one{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 300px;
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 25px;
+    gap: 25px;
+    overflow: hidden; 
+}
+.two{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 25px;
+    gap: 25px;
+    overflow: hidden; 
+}
+/* .three{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 25px;
+    gap: 25px;
+} */
+
+.three {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 25px;
+    gap: 25px;
+    overflow: hidden; /* Add this line to hide overflow */
+}
+
+
+.three h5 {
+    white-space: nowrap; /* Add this line to prevent line break */
+    overflow: hidden; /* Add this line to hide overflow */
+    text-overflow: ellipsis; /* Add this line for ellipsis (...) when text overflows */
+}
+.two h5 {
+    white-space: nowrap; /* Add this line to prevent line break */
+    overflow: hidden; /* Add this line to hide overflow */
+    text-overflow: ellipsis; /* Add this line for ellipsis (...) when text overflows */
+}
+.one h5 {
+    white-space: nowrap; /* Add this line to prevent line break */
+    overflow: hidden; /* Add this line to hide overflow */
+    text-overflow: ellipsis; /* Add this line for ellipsis (...) when text overflows */
+}
+.im{
+    height: 50px;
+    width: 40px;
+}
+
+.one,.two,.three p{
+    padding-left: 20px;
+}
+
+
+/* 
+.star2{
     display: flex;
     gap: 50px;
 }
@@ -67,7 +154,7 @@
 .card{
     width: 18rem; 
     height: 18rem;
-}
+} */
 
 @media (max-width:1000px) {
     *{
@@ -76,34 +163,47 @@
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
+
     }
+
+    .star1{
+        height: 800px;
+    }
+
     .star1 h1{
         position: absolute  ;
         top: 30px;
         height: 100px;
     }
-    .star1{
-        height: 600px;
-    }
+    
     
     .star1 p{
         position: relative;
         width: 80%;
-        top: 35px;
+        top: -105px;
     }
 
-    .star2 {
+   .star2{
+        position: absolute;
         display: flex;
         flex-direction: column;
-        gap: 60px; /* Adjust the gap between cards if needed */
-        align-items: center;
-        justify-content: center;
-       
+        top: 340px;
+   }
+    
+/*     
+    .star2 .one{
+        height: 3000px !important;
     }
+   
+    .star2 .two{
+        height: 3000px !important;
+    }
+   
+    .star2 .three{
+        height: 3000px !important;
+    }
+    */
 
-    .cord{
-        width: 18rem;
-        height: auto; /* Set height to auto for variable height based on content */
-        overflow-y: hidden;
-    }
+    
+
 }
